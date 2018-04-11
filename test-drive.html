@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+    <title>Toyota</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+<div class="top-band">
+	<div class="header-content-wrapper">
+    	<div class="logo-left" data-menuanchor="home"><a href="index.html"><img src="images/toyota-logo.jpg" alt="Toyota" title="Toyota" /></a></div>
+        <ul id="menu">
+            <li><a href="index.html#home" id="homeMainPage">Home</a></li>
+            <li><a href="index.html#colours" id="coloursMainPage">Colours</a></li>
+            <li><a href="index.html#features" id="featuresMainPage">Features</a></li>
+            <li><a href="specification.html">Specifications</a></li>
+            <li><a href="index.html#gallery" id="galleryMainPage">Gallery</a></li>
+            <li class="active"><a href="test-drive.html">Book a Test Drive</a></li>
+        </ul>
+        <div class="dual-tone-btn"><a href="#"><img src="images/liva-dual-btn.png" alt="liva dual tone" title="liva dual tone" /></a></div>
+        <div class="mobile-menu"><a href="#"><img src="images/menu-btn.jpg" alt="menu" title="menu" /></a></div>
+        <div class="mobile-menu-close"><a href="#"><img src="images/menu-close-btn.jpg" alt="close" title="close" /></a></div>
+        <div class="logo-right"><img src="images/logo-live.png" alt="Etios Liva" title="Etios Liva" /></div>
+    </div>
+</div>
+
+<div id="quick-links">
+    <div class="viewport">
+        <ul class="overview">
+            <li class="testDrive"><span class="sprite-img quick-link-icons01"></span></li>
+            <li><a href="images/LivaBrochure.pdf" target="_blank"><span class="sprite-img quick-link-icons02"></span></a></li>
+            <li><span class="sprite-img quick-link-icons03"></span></li>
+            <li><span class="sprite-img quick-link-icons04"></span></li>
+            <li><a href="#" id="cust-icon"><span class="sprite-img quick-link-icons05"></span></a></li>
+        </ul>
+    </div>
+    <div class="cust_details">
+        <img src="images/customer-care.png" alt="" title="">
+        <span style="margin-left:10px"><b>1-800-425-0001</b></span>
+    </div>
+</div>
+
+<div class="form-book-now">
+    <div class="close-form"><img src="images/btn-form-close.jpg"></div>
+    <div class="book-drive-icon-copy"><img src="images/icon-booktestdrive.png">&nbsp;BOOK A TEST DRIVE</div>
+    <form class="form-width-mob">
+        <ul>
+            <li><input class="text-input" placeholder="Name" type="text"></li>
+            <li><input class="text-input" placeholder="Mobile" type="text"> <a href="#" class="btn-verify">Verify</a></li>
+            <li><input class="text-input" placeholder="Enter OTP" type="text"></li>
+            <li><input class="text-input" placeholder="Email" type="text"></li>
+            <li>
+                <select class="text-input">
+                    <option>Model</option>
+                    <option>Model 2</option>
+                    <option>Model 3</option>
+                </select>                
+            </li>
+            <li>
+                <select class="text-input">
+                    <option>City</option>
+                    <option>City1</option>
+                    <option>City2</option>
+                </select>                
+            </li>
+            <li>
+                <select class="text-input">
+                    <option>Dealer</option>
+                    <option>Dealer 1</option>
+                    <option>Dealer 2</option>
+                </select>                
+            </li>
+            <li class="three-col">
+                <select class="text-input">
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>March</option>
+                </select>                
+            </li>
+            <li class="three-col">
+                <select class="text-input">
+                    <option>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>                
+            </li>
+            <li class="three-col">
+                <select class="text-input">
+                    <option>Year</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                </select>                
+            </li>
+            <li class="two-col">
+                <select class="text-input">
+                    <option>Hour</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>                
+            </li>
+            <li class="two-col">
+                <select class="text-input">
+                    <option>Min</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>                
+            </li>
+            <li>
+                <input id="chkTerms" name="chkTerms" checked="" type="checkbox">
+                <label for="chkTerms"><span>I agree to the Terms and Conditions</span></label>
+            </li>
+            <li><a href="#" class="more-btn">SUBMIT </a></li>
+        </ul>
+    </form>
+</div>
+
+<div id="fullpage">
+    <div class="container-fluid">
+    	<div class="container test-drive-container">
+        	<div class="row">
+                <div class="col-xs-12 test-drive-form-container">
+                    <div class="test-drive-form">
+                        <div class="test-drive-form-title">Book a test drive</div>
+                        <form class="td-form-content">
+                            <ul>
+                                <li><input type="text" class="text-input" placeholder="Name"></li>
+                                <li><input type="text" class="text-input" placeholder="Email"></li>
+                                <li><input type="text" class="text-input" placeholder="Mobile"><a href="#" class="btn-verify">Verify</a></li>
+                                <li>
+                                    <select class="text-input">
+                                        <option>Model</option>
+                                        <option>Model 2</option>
+                                        <option>Model 3</option>
+                                    </select>                
+                                </li>
+                                <li>
+                                    <select class="text-input">
+                                        <option>City</option>
+                                        <option>City1</option>
+                                        <option>City2</option>
+                                    </select>                
+                                </li>
+                                <li>
+                                    <select class="text-input">
+                                        <option>Dealer</option>
+                                        <option>Dealer 1</option>
+                                        <option>Dealer 2</option>
+                                    </select>                
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="three-col">
+                                            <select class="text-input">
+                                                <option>Month</option>
+                                                <option>Jan</option>
+                                                <option>Feb</option>
+                                                <option>March</option>
+                                            </select>                
+                                        </li>
+                                        <li class="three-col">
+                                            <select class="text-input">
+                                                <option>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>                
+                                        </li>
+                                        <li class="three-col">
+                                            <select class="text-input">
+                                                <option>Year</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                            </select>                
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="two-col">
+                                            <select class="text-input">
+                                                <option>Hour</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>                
+                                        </li>
+                                        <li class="two-col">
+                                            <select class="text-input">
+                                                <option>Min</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>                
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="full-width mand-feild"><sup>*</sup>All fields are mandatory.</li>
+                                <li class="full-width terms-checkbox">
+                                    <input class="" id="chkTerms" name="chkTerms" type="checkbox" checked="">
+                                    <label for="chkTerms"><span>Yes, I wish to receive information about Toyota Products & Promotional Offers.</span></label>
+                                </li>
+                                <li class="full-width"><a href="#" class="more-btn-white">SUBMIT </a></li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="test-drive-img">
+                        <img src="images/test-drive-form-img.png" alt="" title="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-container-inner">
+        <div class="footer-content-top">
+            <div class="global-custom-container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Follow us on</p>
+                        <ul class="social-link-list">
+                            <li><a href="https://www.facebook.com/EtiosLiva" target="_blank"><img src="images/icon-fb.png" alt="facebook" title="facebook" /></a></li>
+                            <li><a href="https://twitter.com/ToyotaEtiosLiva" target="_blank"><img src="images/icon-tt.png" alt="twitter" title="twitter" /></a></li>
+                            <li><a href="https://www.youtube.com/user/ToyotainIndia/Toyota" target="_blank"><img src="images/icon-youtube.png" alt="youtube" title="youtube" /></a></li>
+                            <li><a href="http://blog.toyotabharat.co.in/" target="_blank"><img src="images/icon-blog.png" alt="blog" title="blog" /></a></li>
+                        </ul>
+                        <div class="divider-line"></div>
+                        <p>Download TOYOTA CONNECT Mobile App</p>
+                        <div class="app-btns">
+                            <a href="#"><img src="images/btn-google-play.jpg" alt="Google play" title="Google play"/></a>&nbsp;&nbsp;
+                            <a href="#"><img src="images/btn-app-store.jpg" alt="App store" title="App store"/></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-content-bottom-inner">
+            <div class="global-custom-container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="footer-link-list custom-height-120">
+                            <li>&copy; 2017 Toyota India</li>
+                            <li><a href="http://www.toyotabharat.com/contact-us/" target="_blank">Contact us</a></li>
+                            <li><a href="http://www.toyotabharat.com/toyota-in-india/about/" target="_blank">Toyota Bharat</a></li>
+                            <li><a href="http://www.toyotabharat.com/find-a-dealer/" target="_blank">Dealer Locator</a></li>
+                            <li><a href="http://www.toyotabharat.com/pricelist/" target="_blank">Price List</a></li>
+                            <li><a href="http://www.toyotabharat.com/legal-notice/" target="_blank">Legal</a></li>
+                            <li><a href="http://www.toyota-global.com/" target="_blank">Toyota Worldwide</a></li>
+                            <li><a href="http://toyotaconnect.in/" target="_blank">Toyota Connect</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 footer-copy">
+                        Available in Kerala, TN, Karnataka, Delhi /NCR, Punjab, Haryana, Maharastra
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quick-link-mobile">
+            <ul>
+                <li class="testDrive"><span class="sprite-img quick-link-mob-icon01"></span></li>
+                <li><span class="sprite-img quick-link-mob-icon02"></span></li>
+                <li><span class="sprite-img quick-link-mob-icon03"></span></li>
+                <li><span class="sprite-img quick-link-mob-icon04"></span></li>
+                <li><span class="sprite-img quick-link-mob-icon05"></span></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+ <script type="text/javascript">
+// 	$(document).ready(function() {
+// 		$('#fullpage').fullpage({
+// 			anchors: ['home', 'colours', 'features', 'gallery'],
+// 			menu: '#menu',
+// 			scrollOverflow: true,
+// 		});
+// 		$("#colorsMainPage").click(function() {
+// 			$.fn.fullpage.moveTo(2, 0);
+// 		});
+// 		$("#featuresMainPage").click(function() {
+// 			$.fn.fullpage.moveTo(3, 0);
+// 		});
+// 		$("#galleryMainPage").click(function() {
+// 			$.fn.fullpage.moveTo(4, 0);
+// 		});
+		
+// 		  $.fn.fullpage.destroy('all');
+// 	});
+	
+	
+</script>
+<script type="text/javascript" src="js/accordian.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
